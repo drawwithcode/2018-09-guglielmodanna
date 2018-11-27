@@ -7,8 +7,34 @@
     <script src="p5.min.js"></script>
     <script src="addons/p5.dom.min.js"></script>
     <script src="addons/p5.sound.min.js"></script>
+    <script src="addons/p5.geolocation.js"></script>
+    <script src="addons/mappa.js"></script>
     <script src="sketch.js"></script>
   </head>
   <body>
+    <div id="dialog">
+      If the Hiroshima bomb were dropped on Milan, you would be OK.
+    </div>
   </body>
+  <style>
+
+  #dialog {
+    position: fixed;
+    display: flex;
+    padding: 0.5em;
+    top: 0;
+    width: 100%;
+    min-height: 3em;
+
+    font-size: 1.2em;
+    font-family: sans-serif;
+
+    background-color: rgba(255, 255, 255, 0.8);
+
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  </style>
 </html>
